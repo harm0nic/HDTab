@@ -1,0 +1,86 @@
+/*
+Theme Name: HDTabs
+Theme URI: https://harmonicdesign.ca
+Author: Harmonic Design
+Author URI: https://harmonicdesign.ca
+Description: This theme is for use on *** <strong>only</strong>
+*/
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-size: 22px;
+	line-height: 1.6;
+	color: #4a4a4a;
+	font-family: sans-serif;
+	background: #fefefe;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* HDTabs - the actual CSS for this project */
+.hdtab_nav {
+	display: flex;
+}
+
+.hdtab_nav_item {
+	padding: 1rem;
+	border: 1px solid #aaa;
+	border-right-color: transparent;
+	cursor: pointer;
+	border-bottom: none;
+}
+
+.hdtab_nav_item:first-child {
+	border-top-left-radius: 0.4em;
+}
+
+.hdtab_nav_item:last-child {
+	border-top-right-radius: 0.4em;
+	border-right-color: #aaa;
+}
+
+.hdtab_nav_item_active {
+	cursor: default;
+	background-color: #eee;
+}
+
+.hdtab_content {
+	padding: 1rem;
+	border: 1px solid #aaa;
+	border-radius: 0.4em;
+	border-top-left-radius: 0;
+}
+
+.hdtab_content_item {
+	display: none;
+}
+
+.hdtab_content_item_active {
+	display: block;
+}
